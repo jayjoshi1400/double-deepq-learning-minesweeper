@@ -8,7 +8,7 @@ Model Architecture: As this is a DDQN, both the target network and online networ
 
 The forward pass has the following steps:
 
-1.The input state is normalized by dividing by 8.
+1. The input state is normalized by dividing by 8.
 2. A safe softmax function is used. This softmax ensures that the values which cannot be taken are masked.
 3. The advantage and value functions are computed using the safe softmax function. The final Q-values are calculated by combining the value and advantage sub-networks.
 
